@@ -1,0 +1,8 @@
+<h2>Employees</h2>
+<ul class="employees">
+  <li *ngFor="let employee of employees">
+    <span class="badge">{{employee.id}}</span> {{employee.firstName}} {{employee.lastName}}
+    <button (click)="this.deleteEmployee(employee.id)">delete</button>
+  </li>
+</ul>
+<app-employee-form (myEvent)="this.getEmployees()"></app-employee-form>

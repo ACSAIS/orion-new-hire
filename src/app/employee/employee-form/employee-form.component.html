@@ -1,0 +1,13 @@
+<h4>Add employee form</h4>
+<form>
+    <label for="firstName">First name</label>
+    <input type="text" name="firstName" id="" [(ngModel)]="newEmployee.firstName">
+    <br/>
+    <label for="lastName">Last name</label>
+    <input type="text" name="lastName" id="" [(ngModel)]="newEmployee.lastName">
+    <br/>
+    <label for="ssn">SSN</label>
+    <input type="text" name="ssn" id="" [(ngModel)]="newEmployee.ssn">
+    <br/>
+    <input type="submit" value="Add employee" (click)="onSubmit()">
+</form>
